@@ -1,0 +1,270 @@
+*{
+    margin: 0;
+    padding: 0;
+    color:white;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.overlay{
+content: "";
+width: 100%;
+height: 70vh;
+background-image:linear-gradient(to right, rgba(227, 1, 114, 0.8), rgba(0, 0, 0, 0.8)),url(../Website2/images/bg.jpg);
+background-position: center;
+background-repeat: no-repeat;
+background-size: cover;
+}
+.overlay{
+    text-align: center;
+    padding-top: 15%;
+}
+.overlayTitle{
+    font-size: large;
+    font-size: 40px;
+    font-weight: bold;
+    padding-bottom: 20px;
+}
+.overlayDescription{
+    font-size: large;
+    margin-bottom: 25px;
+}
+button{
+    border: 1px solid #dd007a;
+    font-size: 18px;
+    padding:10px;
+    border-radius: 15px;
+    box-shadow: 0px 0px 3px 0px #dd007a;
+    background-color: #dd007a;
+    transition: all 0.5s;
+}
+button:hover{
+    background-color: #851151;
+    cursor: pointer;
+}
+.gamesSection{
+background-color: #1291b4;
+}
+.gamesSection p{
+    font-size: 33px;
+    padding:10px 80px;
+    text-align: center;
+    position: relative;
+}
+.gameplay{
+    background-color: #1291b4;
+    text-align: center;
+    padding:20px;
+    height:100%;
+}
+.gamePlayTitle{
+    font-size: 33px;
+    padding:10px 80px;
+    text-align: center;
+    position: relative;
+}
+.gamePlayTitle::after{
+    content:" ";
+    position: absolute;
+    bottom:0;
+    left:37%;
+    width:320px;
+    height:2px;
+    background-color:#dd007a;
+}
+.playcontinar{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding-top: 20px;
+    
+}
+.playcontinar img{
+    width: 80%;
+}
+.playcontinar2{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin-left: 150px;
+    
+}
+.playsection3 img{
+width: 50%;
+height: 90;
+}
+
+/* Racing */
+
+.racingContainer{
+    display: flex;
+    flex-direction: column;
+}
+
+.racingTitle{
+    font-size: 33px;
+    padding:10px 80px;
+    text-align: center;
+    position: relative;
+}
+.racingTitle::after{
+    content:" ";
+    position: absolute;
+    bottom:0;
+    left:38%;
+    width:320px;
+    height:2px;
+    background-color:#dd007a;
+}
+
+.racingSectionCards{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.racingCardContainer{
+    margin: 10px 30px;
+    width:28%;
+    overflow: hidden;
+    position:relative;
+    
+}
+
+.racingCardContainer img{
+    width: 100%;
+}
+
+.racingCardContainer .overlay::after{
+    content:" ";
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width:100%;
+    height:100%;
+    position: absolute;
+    background: linear-gradient(to right, rgba(227, 1, 114, 0.8), rgba(0, 0, 0, 0.8));
+    top:100%;
+    transition: 1.5s all;
+}
+
+.racingCardContainer .overlayButtonContainer{
+    width:100%;
+    height:100%;
+    position: absolute;
+    align-items: center;
+    justify-content: center;
+    transition: 1.5s all;
+    display: none;
+}
+
+.racingCardContainer .overlayButton{
+    border: 2px solid black;
+    border-radius: 10px;
+    padding:10px;
+    box-shadow: 0px 0px 2px 0px black;
+    transition: 1.5s all;
+}
+
+.racingCardContainer .overlayButton:hover{
+    cursor: pointer;
+    border-color: #dd007a;
+    background-color: #dd007a;
+}
+
+.racingCardContainer:hover .overlay::after{
+    top:0%;
+}
+
+.racingCardContainer:hover .overlayButtonContainer{
+    display: flex;
+    transition: 1.5 all;
+}
+
+/* Zombie Section */
+.zombieContainer{
+    display: flex;
+    flex-direction: column;
+}
+
+.zombieTitle{
+    font-size: 33px;
+    padding:10px 80px;
+    text-align: center;
+    position: relative;
+}
+
+.zombieTitle::after{
+    content:" ";
+    position: absolute;
+    bottom:0;
+    left:37.5%;
+    width:320px;
+    height:2px;
+    background-color:#dd007a;
+}
+
+.zombieSectionCards{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    height:700px;
+}
+
+.zombieCardContainer{
+    margin: 10px 30px;
+    width:28%;
+    overflow: hidden;
+    position:relative;
+    align-self: flex-start;
+}
+
+.zombieCardContainer img{
+    width: 100%;
+    
+}
+
+.zombieCardContainer .overlay::after{
+    content:" ";
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width:100%;
+    height:100%;
+    position: absolute;
+    background: linear-gradient(to right, rgba(227, 1, 114, 0.8), rgba(0, 0, 0, 0.8));
+    top:100%;
+    transition: 1.5s all;
+}
+
+.zombieCardContainer:hover .overlay::after{
+    top:0%;
+}
+
+.zombieCardContainer .overlayButtonContainer{
+    width:100%;
+    height:100%;
+    position: absolute;
+    align-items: center;
+    justify-content: center;
+    transition: 1.5s all;
+    display: none;
+}
+
+.zombieCardContainer .overlayButton{
+    border: 2px solid black;
+    border-radius: 10px;
+    padding:10px;
+    box-shadow: 0px 0px 2px 0px black;
+    transition: 1.5s all;
+}
+
+.zombieCardContainer .overlayButton:hover{
+    cursor: pointer;
+    border-color: #dd007a;
+    background-color: #dd007a;
+}
+
+.zombieCardContainer:hover .overlayButtonContainer{
+    display: flex;
+}
+
+
